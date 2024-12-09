@@ -46,6 +46,9 @@
 					<time class="updated" datetime="<?php echo Date::format($lastmod, DB_DATE_FORMAT,'c') ?>"></time>
 					<?php endif; ?>
 				</span>
+				<span class="posted-on">
+					- <?php echo $page->user()->nickname() ?>
+				</span>
 				<?php endif; ?>
 			</div>
 
