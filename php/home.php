@@ -39,7 +39,8 @@
 							<time class="entry-date published" datetime="<?php echo $page->dateRaw('c') ?>">
 								<?php echo $page->date() ?>
 							</time>
-							<i class="ml-3 bi bi-clock-history"></i><?php echo $L->get('Reading time') . ': ' . $page->readingTime(); ?>
+							-
+							<i class="icon icon-clock"></i><?php echo $L->get('Reading time') . ': ' . $page->readingTime(); ?>
 						</span>
 					</div>
 					<h2 class="entry-title title-font text-italic">
