@@ -41,7 +41,7 @@
 			</div>
 
 			<footer class="entry-footer clear">
-				<div class="share-buttons">
+				<!-- <div class="share-buttons">
 					<a href="http://twitter.com/intent/tweet?url=<?php echo urlencode ($page->permalink()) ?>&amp;text=<?php echo urlencode($page->description()) ?>"
 						rel="noopener noreferrer external nofollow" class="c-btn-share  c-btn-twitter" target="_blank">
 						<svg class="c-share-icon  c-share-icon-twitter">
@@ -56,7 +56,7 @@
 						</svg>
 						<?php echo $L->get('Share'); ?>
 					</a>
-				</div>
+				</div> -->
 				<?php if ($page->category()): ?>
 				<div class="entry-terms-wrapper entry-categories-wrapper clear">
 					<span class="screen-reader-text">Categories: </span>
