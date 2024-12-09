@@ -22,7 +22,7 @@
 				      <path d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#6c6c6c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
 				    </g>
 				  </svg>
-				</i>
+				</i><?php echo $L->get('Reading time') . ': ' . $page->readingTime(); ?>
 			</header>
 			<?php if ($page->coverImage()): ?>
 			<div class="entry-media post-thumbnail post-thumbnail-singular">
