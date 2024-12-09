@@ -47,7 +47,9 @@
 					<?php endif; ?>
 				</span>
 				<span class="posted-on">
-					- <?php echo $page->user()->nickname() ?>
+					<span class="entry-date published soft-color">
+						- <?php echo $page->user()->nickname() ?>
+					</span>
 				</span>
 				<?php endif; ?>
 			</div>
