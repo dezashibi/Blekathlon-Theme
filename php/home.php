@@ -25,7 +25,7 @@
 					</svg>
 					<?php endif ?>
 					<span class="screen-reader-text">
-						<?php echo $L->get('Continue reading') . ' ' . $page->title() . PHP_EOL ?>
+						<?php echo $L->get('Continue reading') . ' ' . $page->title() . PHP_EOL ?> - ?php echo $L->get('Reading time') . ': ' . $page->readingTime(); ?>
 					</span>
 				</a>
 			</div>
