@@ -6,14 +6,6 @@
 				<h1 class="entry-title title-font text-italic">
 					<?php echo $page->title(); ?>
 				</h1>
-				<!-- <?php if($login->isLogged()) if($canEdit = checkRole(array('admin', 'editor'))):?>
-				<a href="<?php echo HTML_PATH_ADMIN_ROOT.'edit-content/'.$page->slug() ?>" style="float:right" target="_blank">
-					<svg class="icon" viewBox="0 0 32 32">
-						<use xlink:href="#icon-pencil"></use>
-					</svg>
-					<span><?php echo $L->get('Edit'); ?></span>
-				</a>
-				<?php endif; ?> -->
 				<?php if(!$page->isStatic()):?>
 				<i>
 				  <svg width="14px" height="14px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,22 +49,6 @@
 			</div>
 
 			<footer class="entry-footer clear">
-				<!-- <div class="share-buttons">
-					<a href="http://twitter.com/intent/tweet?url=<?php echo urlencode ($page->permalink()) ?>&amp;text=<?php echo urlencode($page->description()) ?>"
-						rel="noopener noreferrer external nofollow" class="c-btn-share  c-btn-twitter" target="_blank">
-						<svg class="c-share-icon  c-share-icon-twitter">
-							<use xlink:href="#icon-twitter"></use>
-						</svg>
-						<?php echo $L->get('Tweet'); ?>
-					</a>
-					<a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode ($page->permalink()) ?>&amp;t=<?php echo urlencode($page->description()) ?>"
-						rel="noopener noreferrer external nofollow" class="c-btn-share  c-btn-facebook" target="_blank">
-						<svg class="c-share-icon  c-share-icon-facebook">
-							<use xlink:href="#icon-facebook"></use>
-						</svg>
-						<?php echo $L->get('Share'); ?>
-					</a>
-				</div> -->
 				<?php if ($page->category()): ?>
 				<div class="entry-terms-wrapper entry-categories-wrapper clear">
 					<span class="screen-reader-text">Categories: </span>
